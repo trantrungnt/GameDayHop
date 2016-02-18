@@ -4,6 +4,8 @@
  * and open the template in the editor.
  */
 package gamedayhop;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 
 /**
  *
@@ -15,13 +17,18 @@ public class GameDayHop {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        String[][] a = new String[4][4];        
-                               
+        String[][] mt = new String[4][4];                
+                            
         ProcessMatrix oProcessMatrix = new ProcessMatrix();
         //goi phuong thuc khoi tao
-        oProcessMatrix.KhoiTaoMatrix(a);
+        oProcessMatrix.KhoiTaoMatrix(mt);
         //goi phuong thuc hien thi
-        oProcessMatrix.DisplayMatrix(a);
+        oProcessMatrix.DisplayMatrix(mt);
+        //goi phuong thuc play
+        oProcessMatrix.moveLocation();
+                
+            
+       
     }
     
     

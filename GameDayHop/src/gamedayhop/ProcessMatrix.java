@@ -4,6 +4,8 @@
  * and open the template in the editor.
  */
 package gamedayhop;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 
 /**
  *
@@ -29,5 +31,26 @@ public class ProcessMatrix {
                 System.out.print(a[i][j] + " ");
             System.out.println();
         }
+    }
+    
+    public String moveLocation()
+    {
+        String c="";
+        
+        try{
+            
+            System.out.println("Ban di chuyen cac vi tri bang cac phim: a, d, s, w");
+            System.out.print("\nPhim a: sang trai");
+            System.out.print("\nPhim d: sang phai");
+            System.out.print("\nPhim w: di chuyen len");
+            System.out.print("\nPhim s: di chuyen xuong");
+            
+            BufferedReader oBufferedReader = new BufferedReader(new InputStreamReader(System.in));
+            System.out.print("\nNhan 1 phim de di chuyen: ");    
+            c = oBufferedReader.readLine();
+        }catch(Exception e){
+            System.out.println(e.toString());
+        }           
+        return c;   
     }
 }
