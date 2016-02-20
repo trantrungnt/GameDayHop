@@ -53,4 +53,27 @@ public class ProcessMatrix {
         }           
         return c;   
     }
+    
+    //dinh nghia ham tim kiem vi tri cua gia tri x
+    public void Search(String[][] a, String x)
+    {
+        int hang, cot;
+        
+        for(int i=0; i<4; i++)
+            for(int j=0; j<4; j++)
+                if(a[i][j]==x)
+                {
+                    hang = i;
+                    cot = j;
+                    return;
+                }
+    }
+    
+    //HIen thi nguoi choi va kiem tra vi tri cua box
+    public void displayPlayerAndCheck(String[][] a, String c)
+    {
+        c = moveLocation();
+        
+        
+    }
 }

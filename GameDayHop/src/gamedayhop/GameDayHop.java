@@ -7,6 +7,7 @@ package gamedayhop;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
+
 /**
  *
  * @author TrungNT
@@ -24,14 +25,31 @@ public class GameDayHop {
         oProcessMatrix.KhoiTaoMatrix(mt);
         //goi phuong thuc hien thi
         oProcessMatrix.DisplayMatrix(mt);
-        //goi phuong thuc play
+        //goi phuong thuc di chuyen
         oProcessMatrix.moveLocation();
-                
-            
-       
+        clearConsole();                                                  
     }
     
-    
+    public final static void clearConsole()
+{
+    try
+    {
+        final String os = System.getProperty("os.name");
+
+        if (os.contains("Windows"))
+        {
+            Runtime.getRuntime().exec("cls");
+        }
+        else
+        {
+            Runtime.getRuntime().exec("clear");
+        }
+    }
+    catch (final Exception e)
+    {
+        //  Handle any exceptions.
+    }
+}
     
     
 }
