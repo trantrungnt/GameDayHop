@@ -6,7 +6,7 @@
 package gamedayhop;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-
+import org.fusesource.jansi.*;
 
 /**
  *
@@ -17,8 +17,9 @@ public class GameDayHop {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        String[][] mt = new String[4][4];                
+    public static void main(String[] args)     
+    {
+        /*String[][] mt = new String[4][4];                
                             
         ProcessMatrix oProcessMatrix = new ProcessMatrix();
         //goi phuong thuc khoi tao
@@ -26,8 +27,12 @@ public class GameDayHop {
         //goi phuong thuc hien thi
         oProcessMatrix.DisplayMatrix(mt);
         //goi phuong thuc di chuyen
-        oProcessMatrix.moveLocation();
-        clearConsole();                                                  
+        oProcessMatrix.moveLocation();*/
+        
+        System.out.println("hello world");
+        System.out.println();
+        
+        
     }
     
     public final static void clearConsole()
